@@ -1,0 +1,48 @@
+.container
+{
+    width: 230px;
+    padding: 15px;
+    background-color: var(--black);
+}
+
+.list
+{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.list button
+{
+    text-align: left;
+    width: 100%;
+}
+
+.logo
+{
+    width: 28px;
+    border-radius: 50%;
+}
+
+.text
+{
+    padding: 0 8px;
+}
+/* Buttons */
+.newChatBTN,
+.userBTN
+{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.userBTN
+{
+    font-weight: bold;
+}

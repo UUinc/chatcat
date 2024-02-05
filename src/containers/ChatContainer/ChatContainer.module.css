@@ -1,0 +1,34 @@
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar {}
+
+.chatContainer {
+    flex: 1;
+    margin: 0 10vw;
+}
+
+.inputContainer {
+    margin: 0 10vw;
+}
+
+.footer {}
+
+@media (max-width: 1000px) {
+    .chatContainer {
+        margin: 0 25px;
+    }
+
+    .inputContainer {
+        margin: 0 25px;
+    }
+}

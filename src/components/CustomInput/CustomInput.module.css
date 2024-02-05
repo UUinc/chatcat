@@ -1,0 +1,46 @@
+.container
+{
+    margin-bottom: 6px;
+}
+
+.promptContainer
+{
+    border: 1px solid var(--border-xheavy);
+    border-radius: 15px;
+
+    display: flex;
+    align-items: end;
+
+    padding: 12px;
+}
+
+.promptContainer textarea
+{
+    flex: 1;
+
+    font-size: 16px;
+    max-height: 200px;
+
+    resize: none;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+
+.promptContainer button:hover
+{
+    background-color: var(--white);
+}
+
+.promptBTNContainer
+{
+    padding-left: 0;
+}
+
+.promptBTNContainer button
+{
+    padding: 0;
+    height: 32px;
+    width: 32px;
+    background-color: var(--white);
+}

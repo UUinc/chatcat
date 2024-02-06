@@ -11,7 +11,6 @@ export default function ChatContainer()
 {
     const [prompt, setPrompt] = useState("");
 
-
     return (
         <div className={styles.container}>
             <div className={styles.navbar}>

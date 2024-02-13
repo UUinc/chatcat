@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./CustomInput.module.css";
 
-export default function CustomInput({prompt, setPrompt}) {
+export default function CustomInput({prompt, setPrompt, sendEvent}) {
   const [h, setH] = useState(26);
   const [count, setCount] = useState(0);
 
@@ -13,7 +13,6 @@ export default function CustomInput({prompt, setPrompt}) {
 
   useEffect(()=>{
     setCount((prompt.match(/\n/g) || []).length);
-    console.log(count);
     if(count > 8) return;
     setH(26 * count + 26);
   }, [prompt]);
@@ -21,9 +20,9 @@ export default function CustomInput({prompt, setPrompt}) {
   return (
     <div className={styles.container}>
       <div className={styles.promptContainer}>
-        <textarea id="prompt-textarea" style={{height: h}} tabIndex="0" rows="1" placeholder="Message CatChat…" onChange={onChangeInput}></textarea>
+        <textarea id="prompt-textarea" style={{height: h}} tabIndex="0" rows="1" placeholder="Message CatChat…" value={prompt} onChange={onChangeInput}></textarea>
         <div className={styles.promptBTNContainer}>
-          <button>
+          <button onClick={sendEvent}>
             <svg width="24" height="24" viewBox="0 0 24 20" fill="none" style={{color: "black"}}><path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg>
           </button>
         </div>

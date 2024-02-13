@@ -2,7 +2,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-
 }
 
 .container h1 {
@@ -14,21 +13,27 @@
 
 .chatContainer {
     flex: 1;
-    margin: 0 10vw;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .inputContainer {
-    margin: 0 10vw;
+    align-self: center;
+    width: 762px;
 }
 
 .footer {}
 
-@media (max-width: 1000px) {
+
+@media (max-width: 1075px) {
     .chatContainer {
         margin: 0 25px;
     }
 
     .inputContainer {
-        margin: 0 25px;
+        width: 90%;
     }
 }

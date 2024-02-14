@@ -4,6 +4,9 @@ import styles from "./Sidebar.module.css";
 import userLogo from "../../assets/icons/user.png";
 import chatCatLogo from "../../assets/icons/logo.png";
 
+//Components
+import AdSense from "../../adsense/AdSense/AdSense";
+
 export default function Sidebar() {
     const handleRefresh = () => {
         window.location.reload();
@@ -18,6 +21,9 @@ export default function Sidebar() {
                     <img className={styles.logo} src={chatCatLogo} alt="chat cat logo" />
                     <p className={styles.text}>New chat</p>
                 </button>
+
+                <AdSense />
+
                 <button className={styles.userBTN} onClick={openLink}>
                     <img className={styles.logo} src={userLogo} alt="chat cat logo" />
                     <p className={styles.text}>User</p>
